@@ -23,6 +23,7 @@
                     required
             />
         </div>
+
         <div class="form-group">
             <label>
                 Please select the type of scan:
@@ -34,6 +35,7 @@
                 <option>Ultrasound Scan</option>
             </select>
         </div>
+
         <div class="form-group">
             <label>
                 Please select the type of scan:
@@ -129,4 +131,5 @@
 
 
 </body>
+</div>
 </html>

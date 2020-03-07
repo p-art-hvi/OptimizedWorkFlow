@@ -25,29 +25,6 @@
         </div>
 
         <div class="form-group">
-            <label>
-                Please select the type of scan:
-            </label>
-            <select name="Type" size="1">
-                <option>MRI Scan</option>
-                <option>X-Ray Scan</option>
-                <option>CT/CAT Scan</option>
-                <option>Ultrasound Scan</option>
-            </select>
-        </div>
-
-        <div class="form-group">
-            <label>
-                Please select the type of scan:
-            </label>
-            <select name="Type" size="1">
-                <option>MRI Scan</option>
-                <option>X-Ray Scan</option>
-                <option>CT/CAT Scan</option>
-                <option>Ultrasound Scan</option>
-            </select>
-        </div>
-        <div class="form-group">
             <label id="number-label" for="number"
             >Age<span class="clue"></span></label
             >
@@ -61,6 +38,7 @@
                     placeholder="Patient's age"
             />
         </div>
+
         <div class="form-group">
             <p>Which option best describes your current role?</p>
             <select id="dropdown" name="role" class="form-control" required>
@@ -72,19 +50,21 @@
                 <option value="other">Other</option>
             </select>
         </div>
-        <div class="form-group">
-            <p>
-                What is your favorite feature of freeCodeCamp?
-            </p>
-            <select id="most-like" name="mostLike" class="form-control" required>
-                <option disabled selected value>Select an option</option>
-                <option value="challenges">Challenges</option>
-                <option value="projects">Projects</option>
-                <option value="community">Community</option>
-                <option value="openSource">Open Source</option>
-            </select>
-        </div>
 
+        <div class="form-group">
+            <label id="time" for="number"
+            >Age<span class="clue"></span></label
+            >
+            <input
+                    type="number"
+                    name="age"
+                    id="timeneeded"
+                    min="10"
+                    max="99"
+                    class="form-control"
+                    placeholder="Amount of time in minutes for scan"
+            />
+        </div>
 
         <div class="form-group">
             <p>Additional notes about the patient</p>
@@ -126,10 +106,7 @@
         </select>
         <input type="submit">
     </form>
-
 </center>
-
-
 </body>
 </div>
 </html>

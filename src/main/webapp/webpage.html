@@ -19,19 +19,7 @@
                     name="name"
                     id="name"
                     class="form-control"
-                    placeholder="Please enter the patient's first and last name"
-                    required
-            />
-        </div>
-
-        <div class="form-group">
-            <label id="patient id" for="id">Patient Id</label>
-            <input
-                    type="text"
-                    name="id"
-                    id="id"
-                    class="form-control"
-                    placeholder="Please enter the patient's id"
+                    placeholder="Enter first and last name"
                     required
             />
         </div>
@@ -47,14 +35,14 @@
                     min="10"
                     max="99"
                     class="form-control"
-                    placeholder="Patient's age"
+                    placeholder="Age"
             />
         </div>
 
         <div class="form-group">
-            <p>Which option best describes your current role?</p>
+            <p>Which type of scan is needed for the patient?</p>
             <select id="dropdown" name="role" class="form-control" required>
-                <option disabled selected value>Select current role</option>
+                <option disabled selected value>Select type of scan</option>
                 <option value="MRI">MRI scan</option>
                 <option value="X-Ray">X-Ray scan</option>
                 <option value="CT/CAT">CT/CAT scan</option>
@@ -65,16 +53,31 @@
 
         <div class="form-group">
             <label id="time" for="number"
-            >Age<span class="clue"></span></label
+            >Time per Scan<span class="clue"></span></label
             >
             <input
                     type="number"
                     name="age"
                     id="timeneeded"
-                    min="10"
-                    max="99"
+                    min="0"
+                    max="300"
                     class="form-control"
-                    placeholder="Amount of time in minutes for scan"
+                    placeholder="Minutes per scan"
+            />
+        </div>
+
+        <div class="form-group">
+            <label id="number-label" for="number"
+            >Number of scans<span class="clue"></span></label
+            >
+            <input
+                    type="number"
+                    name="scans"
+                    id="number"
+                    min="0"
+                    max="20"
+                    class="form-control"
+                    placeholder="Scans"
             />
         </div>
 
@@ -84,7 +87,7 @@
                     id="comments"
                     class="input-textarea"
                     name="comment"
-                    placeholder="Enter your notes here..."
+                    placeholder="Enter your notes here"
             ></textarea>
         </div>
 

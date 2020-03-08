@@ -25,28 +25,17 @@
         </div>
 
         <div class="form-group">
-            <label>
-                Please select the type of scan:
-            </label>
-            <select name="Type" size="1">
-                <option>MRI Scan</option>
-                <option>X-Ray Scan</option>
-                <option>CT/CAT Scan</option>
-                <option>Ultrasound Scan</option>
-            </select>
+            <label id="patient id" for="id">Patient Id</label>
+            <input
+                    type="text"
+                    name="id"
+                    id="id"
+                    class="form-control"
+                    placeholder="Please enter the patient's id"
+                    required
+            />
         </div>
 
-        <div class="form-group">
-            <label>
-                Please select the type of scan:
-            </label>
-            <select name="Type" size="1">
-                <option>MRI Scan</option>
-                <option>X-Ray Scan</option>
-                <option>CT/CAT Scan</option>
-                <option>Ultrasound Scan</option>
-            </select>
-        </div>
         <div class="form-group">
             <label id="number-label" for="number"
             >Age<span class="clue"></span></label
@@ -61,6 +50,7 @@
                     placeholder="Patient's age"
             />
         </div>
+
         <div class="form-group">
             <p>Which option best describes your current role?</p>
             <select id="dropdown" name="role" class="form-control" required>
@@ -72,19 +62,21 @@
                 <option value="other">Other</option>
             </select>
         </div>
-        <div class="form-group">
-            <p>
-                What is your favorite feature of freeCodeCamp?
-            </p>
-            <select id="most-like" name="mostLike" class="form-control" required>
-                <option disabled selected value>Select an option</option>
-                <option value="challenges">Challenges</option>
-                <option value="projects">Projects</option>
-                <option value="community">Community</option>
-                <option value="openSource">Open Source</option>
-            </select>
-        </div>
 
+        <div class="form-group">
+            <label id="time" for="number"
+            >Age<span class="clue"></span></label
+            >
+            <input
+                    type="number"
+                    name="age"
+                    id="timeneeded"
+                    min="10"
+                    max="99"
+                    class="form-control"
+                    placeholder="Amount of time in minutes for scan"
+            />
+        </div>
 
         <div class="form-group">
             <p>Additional notes about the patient</p>
@@ -103,33 +95,5 @@
         </div>
     </form>
 </div>
-
-<body>
-<center>
-    <h1>
-        Patient Information
-    </h1>
-    <form action="Patient Information">
-        <label>
-            Please enter your first and last name:
-        </label>
-    </form>
-    <form action="SelectAppointment">
-        <label>
-            Please select the type of scan:
-        </label>
-        <select name="Type" size="1">
-            <option>MRI Scan</option>
-            <option>X-Ray Scan</option>
-            <option>CT/CAT Scan</option>
-            <option>Ultrasound Scan</option>
-        </select>
-        <input type="submit">
-    </form>
-
-</center>
-
-
-</body>
 </div>
 </html>
